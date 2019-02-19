@@ -10,7 +10,7 @@ let b:current_syntax = "eprime"
 
 " Keywords and matches
 syntax match eprimeLanguage "language \(Essence\|ESSENCE\)' \d\+\(\.\d\)*"
-syn keyword eprimeKeywords letting find be indexed by 
+syn keyword eprimeKeywords letting find be indexed by minimising maximising
 syn keyword eprimeKeywords of domain such that given where 
 syn keyword eprimeBoolean true false
 
@@ -30,6 +30,7 @@ syntax match eprimeOperator '-\|\*\|%'
 syntax match eprimeOperator '+\|-\|=\|!=\|<\|<=\|>\|>='
 syntax match eprimeOperator '<=lex\|<lex\|>=lex\|>lex'
 syntax match eprimeOperator '->\|\<\-\>\|,\|/\\\|\\/'
+syntax match eprimeOperator '\.\.' "ranges
 
 " highlights
 highlight link eprimeLanguage Special

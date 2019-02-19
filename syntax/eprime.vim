@@ -17,7 +17,7 @@ syn keyword eprimeBoolean true false
 syn keyword eprimeTypes int bool matrix
 syn match eprimeInteger '\d\+'
 syn match eprimeInteger '[-+]\d\+'
-syn match eprimeFloat '\d\+\.\d*'
+"syn match eprimeFloat '\d\+\.\d*'
 
 syn keyword eprimeGC gcc alldifferent_except alldifferent allDiff table
 
@@ -26,11 +26,10 @@ syn match eprimeComment "\$.*$" contains=eprimeTodo
 
 syn keyword eprimeOperator min max intersect union forall forAll sum exists in
 syntax match eprimeOperator '\!\|||\|\*\*'
-syntax match eprimeOperator '-\|\*\|%'
+syntax match eprimeOperator '-\|\*\|%\|\.\.'
 syntax match eprimeOperator '+\|-\|=\|!=\|<\|<=\|>\|>='
 syntax match eprimeOperator '<=lex\|<lex\|>=lex\|>lex'
 syntax match eprimeOperator '->\|\<\-\>\|,\|/\\\|\\/'
-syntax match eprimeOperator '\.\.' "ranges
 
 " highlights
 highlight link eprimeLanguage Special
@@ -43,4 +42,4 @@ highlight link eprimeTodo Todo
 highlight link eprimeConstant Constant
 highlight link eprimeBoolean Boolean
 highlight link eprimeInteger Number
-highlight link eprimeFloat Number
+"highlight link eprimeFloat Number
